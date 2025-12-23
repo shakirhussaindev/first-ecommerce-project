@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --text-largg: 95px; 
+  --font-sekuya: "Sekuya", system-ui;
+}
