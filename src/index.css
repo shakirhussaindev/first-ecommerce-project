@@ -3,4 +3,7 @@
 @theme {
   --text-largg: 95px; 
   --font-sekuya: "Sekuya", system-ui;
+  --font-pop: "Poppins", sans-serif;
+  --container-container:1170px;
+  --color-white1: #FAFAFA;
 }

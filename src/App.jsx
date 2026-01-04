@@ -5,20 +5,14 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import About from "./components/About";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import Product from "./components/Product";
-import Contact from "./components/Contact";
+import Home from "./pages/Home";
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/" element={<Home />}></Route>
-      <Route path="/about" element={<About />}></Route>
-      <Route path="/services" element={<Services />}></Route>
-      <Route path="/product" element={<Product />}></Route>
-      <Route path="/contact" element={<Contact />}></Route>
     </Route>
   )
 );
