@@ -4,15 +4,23 @@ import Flex from '../components/Flex'
 import Image from '../components/Image'
 import Logo2 from '../assets/logo2.png'
 import QrCode from '../assets/site-qr.png'
+import PlayStore from '../assets/google-play-badge-logo.png'
+import AppStore from '../assets/app-store-badge-logo.png'
 import { AiOutlineSend } from "react-icons/ai";
 import FooterTitle from '../components/FooterTitle'
 import FooterList from '../components/FooterList'
+import { RiFacebookLine } from "react-icons/ri";
+import { LuTwitter } from "react-icons/lu";
+import { FaInstagram } from "react-icons/fa6";
+import { RiLinkedinLine } from "react-icons/ri";
+import { FaRegCopyright } from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
-    <footer className='bg-black pt-20 pb-15'>
+    <footer className='bg-black pt-20'>
       <Container>
-        <Flex className="justify-between">
+        <Flex className="justify-between pb-15">
           <div className=''>
           <Image src={Logo2} alt="logo"/>
           <h5 className='text-xl text-white1 font-pop font-medium py-6'>Subscribe</h5>
@@ -52,10 +60,24 @@ const Footer = () => {
           <div className=''>
           <FooterTitle text="Download App"/>
           <p className='text-xs font-pop font-medium text-[#fafafab3] pt-6 pb-2'>Save $3 with App New User Only</p>
-          <Image className="w-[80px]" src={QrCode}/>
+          <Flex className="justify-between">
+            <Image className="w-[80px]" src={QrCode}/>
+            <div>
+              <Image className="w-[106px] mb-2.5" src={PlayStore}/>
+              <Image className="w-[106px]" src={AppStore}/>
+            </div>
+          </Flex>
+          <Flex className="text-white text-3xl gap-6 mt-6">
+            <RiFacebookLine />
+            <LuTwitter />
+            <FaInstagram />
+            <RiLinkedinLine />
+          </Flex>
           </div>
         </Flex>
       </Container>
+      <hr className='border-[#ffffff66] opacity-30'/>
+      <p className='text-[#ffffff66]  text-base font-pop font-normal text-center pt-4 pb-6'><FaRegCopyright className='inline-block text-2xl pr-1'/>Copyright Rimel 2022. All right reserved</p>
     </footer>
   )
 }
